@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyages Sur-Mesure</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #a87953);
+            color: #333;
+        }
+
+        /* En-tête avec une belle image de fond */
+        header {
+            background-image: url('https://images.pexels.com/photos/30613494/pexels-photo-30613494/free-photo-of-maisons-cotieres-pittoresques-en-catalogne-espagne.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Image de voyage */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px; /* Augmentation du padding pour plus d'espace */
+            text-align: center;
+            color: white; /* Texte en blanc pour contraster avec l'image */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Overlay sombre pour améliorer la lisibilité du texte */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Overlay sombre */
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 48px; /* Taille de police augmentée */
+            margin: 0;
+            position: relative;
+            z-index: 2; /* Place le texte au-dessus de l'overlay */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour le texte */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            z-index: 2; /* Place la navigation au-dessus de l'overlay */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* Texte en blanc */
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #2575fc; /* Changement de couleur au survol */
+        }
+
+        .login-btn {
+            background: #2575fc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+
+        .login-btn:hover {
+            background: #1a5bbf;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .popular-trips {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        .popular-trips h2 {
+            font-size: 28px;
+            color: #2575fc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .popular-trips p {
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .trip-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .trip-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .trip-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .trip-item img {
+            width: 100%;
+            height: 300px; /* Format portrait pour "Les voyages les plus choisis" */
+            object-fit: cover;
+        }
+
+        .trip-item p {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            padding: 15px;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .trip-item .description {
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+
+        .favorite-trip {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .favorite-trip h2 {
+            font-size: 28px;
+            color: #2575fc;
+            margin-bottom: 20px;
+        }
+
+        .favorite-trip p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .favorite-trip img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .favorite-trip .btn {
+            background: #2575fc;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+
+        .favorite-trip .btn:hover {
+            background: #1a5bbf;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            color: #555;
+        }
+
+        /* Styles pour la section "Nos Types de Voyages" */
+        .destinations {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .destination-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .destination-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .destination-item img {
+            width: 100%;
+            height: 300px; /* Format portrait pour "Nos Types de Voyages" */
+            object-fit: cover;
+        }
+
+        .destination-item p {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+            padding: 15px;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .destination-item .description {
+            padding: 15px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voyages Sur-Mesure</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="circuits.html">Circuits</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html" class="login-btn">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Section Nos Types de Voyages -->
+        <section class="destinations">
+            <h2>Nos Types de Voyages</h2>
+            <div class="destination-grid">
+                <!-- Voyage Classique -->
+                <div class="destination-item">
+                    <a href="voyageclassique.html">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Voyage Classique">
+                    </a>
+                    <p>Voyage Classique</p>
+                    <div class="description">
+                        Découvrez des destinations emblématiques avec des itinéraires soigneusement planifiés pour une expérience riche en culture et en histoire.
+                    </div>
+                </div>
+
+                <!-- Voyage En Amoureux -->
+                <div class="destination-item">
+                    <a href="voyageamoureux.html">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Voyage En Amoureux">
+                    </a>
+                    <p>Voyage En Amoureux</p>
+                    <div class="description">
+                        Offrez-vous des moments romantiques dans des lieux idylliques, parfaits pour célébrer votre amour.
+                    </div>
+                </div>
+
+                <!-- Voyage Extrême -->
+                <div class="destination-item">
+                    <a href="voyageextreme.html">
+                        <img src="https://images.unsplash.com/photo-1517639493569-5666a7b2f494?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Voyage Extrême">
+                    </a>
+                    <p>Voyage Extrême</p>
+                    <div class="description">
+                        Vivez des aventures palpitantes avec des activités extrêmes comme le saut à l'élastique, le rafting ou l'escalade.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Les voyages les plus choisis -->
+        <section class="popular-trips">
+            <h2>Les voyages les plus choisis</h2>
+            <p>Découvrez les destinations préférées de nos voyageurs.</p>
+            <div class="trip-grid">
+                <!-- Voyage 1 : Paris -->
+                <div class="trip-item">
+                    <a href="paris.html">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Paris">
+                    </a>
+                    <p>Paris</p>
+                    <div class="description">
+                        Découvrez la Ville Lumière avec ses monuments emblématiques et ses quartiers pittoresques.
+                    </div>
+                </div>
+
+                <!-- Voyage 2 : Rome -->
+                <div class="trip-item">
+                    <a href="rome.html">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Rome">
+                    </a>
+                    <p>Rome</p>
+                    <div class="description">
+                        Explorez la richesse historique de Rome avec ses sites antiques et sa cuisine délicieuse.
+                    </div>
+                </div>
+
+                <!-- Voyage 3 : Tokyo -->
+                <div class="trip-item">
+                    <a href="tokyo.html">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tokyo">
+                    </a>
+                    <p>Tokyo</p>
+                    <div class="description">
+                        Plongez dans l'énergie unique de Tokyo, entre modernité et traditions.
+                    </div>
+                </div>
+
+                <!-- Voyage 4 : New York -->
+                <div class="trip-item">
+                    <a href="newyork.html">
+                        <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="New York">
+                    </a>
+                    <p>New York</p>
+                    <div class="description">
+                        Vivez l'effervescence de la Grosse Pomme avec ses gratte-ciel et ses quartiers emblématiques.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Notre voyage coup de cœur -->
+        <section class="favorite-trip">
+            <h2>Notre coup de coeur ❤️</h2>
+            <p>Découvrez notre sélection spéciale : une expérience unique qui vous laissera des souvenirs inoubliables.</p>
+            <img src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Voyage coup de cœur">
+            <p><strong>Destination :</strong> Îles Maldives</p>
+            <p><strong>Description :</strong> Profitez d'une escapade paradisiaque avec des bungalows sur l'eau, des plages de sable blanc et des eaux cristallines.</p>
+            <a href="maldives.html" class="btn">Découvrir ce voyage</a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Voyages Sur-Mesure. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
