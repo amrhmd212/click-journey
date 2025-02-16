@@ -1,0 +1,134 @@
+:root {
+    --soft-white: #F5F5F5;
+    --light-gray: #E0E0E0;
+    --medium-gray: #B0B0B0;
+    --dark-gray: #333333;
+    --spice-orange: #7E57C2;
+    --fire-red: #FF4500;
+    --gradient-primary: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    --gradient-secondary: linear-gradient(45deg, var(--fire-red), var(--spice-orange));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--soft-white);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px 0;
+    color: var(--dark-gray);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.admin-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    display: grid;
+    gap: 20px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--light-gray);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h3 {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    color: white;
+    background: var(--gradient-primary);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn.vip {
+    background: var(--gradient-primary);
+}
+
+.btn.ban {
+    background: var(--gradient-secondary);
+}
+
+.btn.edit {
+    background: linear-gradient(45deg, var(--medium-gray), #999999);
+}
+
+.status {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.status.vip {
+    background: var(--gradient-primary);
+}
+
+.status.banned {
+    background: var(--gradient-secondary);
+}
+
+.status.active {
+    background: linear-gradient(45deg, #28a745, #218838);
+}

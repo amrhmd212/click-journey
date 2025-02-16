@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>États-Unis - Xtreme Voyage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="pays-activites.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="quisommesnous.html">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="connexion.html" class="login-btn no-effect">Connexion</a></li>
+            <li><a href="recherche.html"><i class="fas fa-search search-icon"></i></a></li> 
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="main-title">États-Unis</h1>
+        <img src="https://assets.holidaypirates.group/2022_02/MTY0NDUwODc2OTcyOQ.jpeg" alt="États-Unis">
+    </header>
+
+    <main>
+        <section class="destination-section">
+            <div class="activity-grid">
+ 
+                <div class="activity-card">
+                    <img src="https://external-preview.redd.it/bh4Y09AFyLjNxHwDpsJn7Y9Qco1B1mEnhH3NS6VVVbQ.jpg?auto=webp&s=1fa1d53e8c4168180689b56e2a51b1eb682a458a" alt="Tir au lance-roquettes et tank">
+                    <h3>Tir au tank & lance-roquettes</h3>
+                    <p>Call of Duty n'est plus qu'un jeu, libérez votre guerrier intérieur en testant des armes puissantes et des véhicules militaires dans un environnement sécurisé.</p>
+                    <div class="activity-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <span class="selected-count">0</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="select-btn">Sélectionner</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1714274142744-5cbc12821bd2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWwlMjBjYXBpdGFuJTIweW9zZW1pdGV8ZW58MHx8MHx8fDA%3D" alt="Escalade de El Capitan">
+                    <h3>Escalade de El Capitan</h3>
+                    <p>Relevez le défi ultime en escaladant la célèbre paroi d'El Capitan, une ascension réservée aux grimpeurs les plus audacieux</p>
+                    <div class="activity-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <span class="selected-count">0</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="select-btn">Sélectionner</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://th.bing.com/th/id/R.0ce5de299fab1e40ad58ee00bdf51067?rik=5LSCPLzo1xd8CQ&pid=ImgRaw&r=0" alt="Saut en base jump">
+                    <h3>Saut en base jump au Perrine Bridge</h3>
+                    <p>Fan d'Assassin's Creed vous en avez toujours rêvé et le moment est venu, faites le saut de l'ange depuis le Perrine Bridge en Idaho, enchainé par un atterrissage en parachute.</p>
+                    <div class="activity-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <span class="selected-count">0</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="select-btn">Sélectionner</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://th.bing.com/th/id/OIP.U5nFINSc4Tk7o6s2BAb9EwHaF0?rs=1&pid=ImgDetMain" alt="Chute libre depuis un avion de chasse">
+                    <h3>Vol en chute libre depuis un avion de chasse</h3>
+                    <p>Briser le mur du son avant de sauter vers une chute effrénée.</p>
+                    <div class="activity-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <span class="selected-count">0</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="select-btn">Sélectionner</button>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="https://th.bing.com/th/id/OIP.Yt_MJkfgfzzpnyvqwtCp-AHaEK?rs=1&pid=ImgDetMain" alt="Exploration sous-marine">
+                    <h3>Exploration sous-marine en capsule</h3>
+                    <p>Plongez dans les profondeurs marines à bord d'une capsule sous-marine et découvrez les mystères des abysses.</p>
+                    <div class="activity-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <span class="selected-count">0</span>
+                            <button class="quantity-btn">+</button>
+                        </div>
+                        <button class="select-btn">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="selection-summary">
+                <h3>Votre Sélection</h3>
+                <p>Activités choisies: <span id="total-activities">0</span></p>
+                <p>Total: <span id="total-price">0 €</span></p>
+                <a href="date.html" class="btn">Confirmer</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Xtreme VOYAGES - Droits Réservés | <a href="politique.html">Politique de remboursement</a></p>
+        <p>Contactez-nous pour plus d'informations</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,443 @@
+:root {
+    --soft-white: #F5F5F5;
+    --light-gray: #E0E0E0;
+    --medium-gray: #B0B0B0;
+    --dark-gray: #333333;
+    --purple: #7E57C2;
+    --fire-red: #FF4500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: var(--soft-white);
+    color: var(--dark-gray);
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(45deg,
+            rgba(255,255,255,0.1) 0%,
+            rgba(0,0,0,0.1) 50%),
+        url('https://images.pexels.com/photos/30613494/pexels-photo-30613494/free-photo-of-maisons-cotieres-pittoresques-en-catalogne-espagne.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow:
+        0 0 10px rgba(0,0,0,0.1),
+        0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.main-title span {
+    font-size: 10rem;
+    color: var(--purple);
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:not(.no-effect)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--purple), var(--fire-red));
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    transition: 0.3s;
+}
+
+.search-icon:hover {
+    color: var(--purple);
+}
+
+.login-btn {
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+main {
+    padding: 40px 5%;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+    padding: 80px 5%;
+    background: white;
+    margin: 100px 0;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid var(--medium-gray);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.grid-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    color: var(--dark-gray);
+    border-radius: 10px;
+}
+
+.grid-section p.subtitle {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 40px;
+}
+
+.destination-item {
+    background: white;
+    padding: 40px;
+    border: 1px solid var(--medium-gray);
+    transition: 0.4s;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.destination-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.destination-item::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.destination-item:hover::before {
+    opacity: 1;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.destination-item:hover img {
+    transform: scale(1.05);
+}
+
+.destination-item p {
+    color: var(--dark-gray);
+    font-family: 'Orbitron', sans-serif;
+    margin: 25px 0;
+    font-size: 2rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.destination-item p::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--purple);
+}
+
+.description {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    padding: 0 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.danger-meter {
+    width: 100%;
+    height: 12px;
+    background: rgba(0,0,0,0.1);
+    margin: 30px 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.danger-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--fire-red), var(--purple));
+    width: 30%;
+    transition: 1s ease-in-out;
+}
+
+.favorite-trip {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--medium-gray);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.favorite-trip h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-grid figure {
+    width: 30%;
+    text-align: center;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--medium-gray);
+    transition: 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.image-grid figcaption {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    margin-top: 10px;
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 20px rgba(255, 69, 0, 0.3);
+}
+
+.special-offer {
+    background: white;
+    padding: 60px 40px;
+    margin: 100px 0;
+    border: 1px solid var(--medium-gray);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.special-offer h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.offer-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.offer-image {
+    width: 50%;
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--medium-gray);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.offer-image:hover img {
+    transform: scale(1.1);
+}
+
+.offer-details {
+    width: 40%;
+    text-align: left;
+}
+
+.offer-details p {
+    color: var(--medium-gray);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.offer-price {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin: 20px 0;
+    position: relative;
+}
+
+.offer-price span {
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+footer {
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--medium-gray);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    margin-top: 100px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .grid-section {
+        padding: 40px 5%;
+    }
+
+    .offer-content {
+        flex-direction: column;
+    }
+
+    .offer-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .offer-details {
+        width: 100%;
+        text-align: center;
+    }
+}

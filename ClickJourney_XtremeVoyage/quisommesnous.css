@@ -1,0 +1,200 @@
+:root {
+    --soft-white: #F5F5F5;
+    --purple: #7E57C2;
+    --fire-red: #FF4500;
+    --dark-gray: #333333;
+    --medium-gray: #B0B0B0;
+    --light-gray: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: var(--soft-white);
+    color: var(--dark-gray);
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:not(.no-effect)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--purple), var(--fire-red));
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    transition: 0.3s;
+}
+
+.search-icon:hover {
+    color: var(--purple);
+}
+
+.login-btn {
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        url('https://chenxinlaw.com.tw/wp-content/uploads/2023/01/%E9%96%8B%E5%85%AC%E5%8F%B8%E6%9C%89%E4%BB%80%E9%BA%BC%E5%A5%BD%E8%99%95%EF%BC%9F%E6%88%90%E7%AB%8B%E5%85%AC%E5%8F%B8%E8%A6%81%E8%B7%91%E7%9A%84%E6%B5%81%E7%A8%8B%EF%BC%9F%E6%89%8B%E6%8A%8A%E6%89%8B%E5%B8%B6%E4%BD%A0%E9%96%8B%E4%B8%80%E9%96%93%E5%85%AC%E5%8F%B8%EF%BC%81-scaled.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    display: grid;
+    gap: 40px;
+}
+
+.mission-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--medium-gray);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid var(--medium-gray);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: linear-gradient(45deg, var(--purple), var(--fire-red));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+}
