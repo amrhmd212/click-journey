@@ -1,0 +1,240 @@
+:root {
+    --soft-white: #F5F5F5;
+    --spice-orange: #7E57C2;
+    --fire-red: #FF4500;
+    --dark-gray: #333333;
+    --medium-gray: #B0B0B0;
+    --light-gray: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: var(--soft-white);
+    color: var(--dark-gray);
+    overflow-x: hidden;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(116, 115, 115, 0.7)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhZ2V8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:not(.no-effect)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--spice-orange), var(--fire-red));
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    transition: 0.3s;
+}
+
+.search-icon:hover {
+    color: var(--spice-orange);
+}
+
+.login-btn {
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
+.search-container {
+    max-width: 800px;
+    margin: -50px auto 50px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-bar {
+    display: flex;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search-bar button {
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    color: white;
+    padding: 0 40px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    transform: scale(1.05);
+}
+
+.results-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.country-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.country-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.country-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.country-info {
+    padding: 20px;
+}
+
+.country-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.country-description {
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+footer {
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+
+    .search-bar input {
+        padding: 15px;
+    }
+
+    .search-bar button {
+        padding: 15px;
+    }
+}
