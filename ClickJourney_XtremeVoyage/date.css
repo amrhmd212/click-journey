@@ -203,3 +203,15 @@ footer a:hover {
         margin: 20px;
     }
 }
+.error-message {
+    background-color: #ffe6e6;
+    border: 1px solid var(--fire-red);
+    color: var(--fire-red);
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(255, 69, 0, 0.1);
+}

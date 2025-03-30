@@ -1,10 +1,10 @@
 :root {
     --soft-white: #F5F5F5;
-    --light-gray: #E0E0E0;
-    --medium-gray: #B0B0B0;
-    --dark-gray: #333333;
     --spice-orange: #7E57C2;
     --fire-red: #FF4500;
+    --dark-gray: #333333;
+    --medium-gray: #B0B0B0;
+    --light-gray: #E0E0E0;
     --gradient-primary: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
     --gradient-secondary: linear-gradient(45deg, var(--fire-red), var(--spice-orange));
 }
@@ -16,23 +16,143 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     background: var(--soft-white);
     color: var(--dark-gray);
-    line-height: 1.6;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+
+nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+nav a:not(.no-effect)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--spice-orange), var(--fire-red));
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    transition: 0.3s;
+}
+
+.search-icon:hover {
+    color: var(--spice-orange);
+}
+
+.login-btn {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
+
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     margin: 40px 0;
-    color: var(--dark-gray);
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.admin-info {
+    max-width: 600px;
+    margin: 30px auto 40px;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    border: 1px solid var(--light-gray);
+}
+
+.admin-info strong {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.admin-info a {
+    font-weight: bold;
+    margin-left: 10px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.admin-info a:hover {
+    opacity: 0.7;
+}
+
+.admin-info .divider {
+    margin: 0 8px;
+    color: var(--medium-gray);
+}
+
+
 
 .admin-container {
     max-width: 1000px;
@@ -47,6 +167,7 @@ h1 {
     display: grid;
     gap: 20px;
 }
+
 
 .user-card {
     display: flex;
@@ -80,6 +201,7 @@ h1 {
     color: var(--medium-gray);
 }
 
+
 .user-actions {
     display: flex;
     gap: 10px;
@@ -88,17 +210,19 @@ h1 {
 .btn {
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
     color: white;
     background: var(--gradient-primary);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
 }
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
 }
 
 .btn.vip {
@@ -112,6 +236,15 @@ h1 {
 .btn.edit {
     background: linear-gradient(45deg, var(--medium-gray), #999999);
 }
+
+.btn.admin {
+    background: var(--gradient-primary);
+}
+
+.btn.admin:hover {
+    background: var(--gradient-secondary);
+}
+
 
 .status {
     font-size: 0.9rem;
@@ -131,4 +264,75 @@ h1 {
 
 .status.active {
     background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.status.admin {
+    color: var(--spice-orange);
+    font-weight: bold;
+}
+
+.status.user {
+    color: #666;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.pagination a,
+.pagination span {
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    background: var(--soft-white);
+    color: var(--dark-gray);
+    border: 2px solid var(--light-gray);
+}
+
+.pagination a:hover {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+}
+
+.pagination .current {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
+}
+
+
+footer {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid var(--medium-gray);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

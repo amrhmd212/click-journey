@@ -234,6 +234,24 @@ nav a:hover::after {
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
 }
+.return-btn {
+    background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.return-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 69, 0, 0.3);
+}
 
 footer {
     background: linear-gradient(45deg, var(--spice-orange), var(--fire-red));

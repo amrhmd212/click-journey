@@ -190,3 +190,43 @@ footer a:hover {
         font-size: 1.8rem;
     }
 }
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #4a6fa5;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.confirm-btn {
+    background: linear-gradient(45deg, #ff7b25, #e63946);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.confirm-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
