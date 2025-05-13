@@ -1,0 +1,145 @@
+[
+    {
+        "email": "koa@gmail.com",
+        "username": "koa",
+        "password": "$2y$10$Mq3pOKHF25BnMU05fafff.I8i7StZPmgyvGz7W9oL0VQ.yzd6Zygm",
+        "phone": "",
+        "address": "",
+        "vip_status": "Actif",
+        "join_date": "2025-03-27",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": true
+    },
+    {
+        "email": "koa2@gmail.com",
+        "username": "koa2",
+        "password": "$2y$10$L\/Wzp3zQ.kD9pMlpviduR.pLTlHwRDtiH0gZWIiMWdjMteWcDnw92",
+        "phone": "",
+        "address": "",
+        "vip_status": "Banni",
+        "join_date": "2025-03-27",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa3@gmail.com",
+        "username": "koa3",
+        "password": "$2y$10$SaLgnzIOVk4JbYTq0OCGZu\/iPxdIicvVGzzS4G488CXzWLt5KuK7m",
+        "phone": "",
+        "address": "",
+        "vip_status": "Actif",
+        "join_date": "2025-03-28",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": true
+    },
+    {
+        "email": "koa4@gmail.com",
+        "username": "koa4",
+        "password": "$2y$10$EP5Ev0pLqVmSxzx5r8ECG.2M2G46CcMYDGEV7BcUj093guzS8ZxUO",
+        "phone": "",
+        "address": "",
+        "vip_status": "Actif",
+        "join_date": "2025-03-28",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa5@gmial.com",
+        "username": "koa5",
+        "password": "$2y$10$ARMennA48x1Ofvv2C3G0YOMiDrYxpc3T9WaZMr0N6ohdnXACklYXu",
+        "phone": "",
+        "address": "",
+        "vip_status": "Actif",
+        "join_date": "2025-03-28",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa6@gmail.com",
+        "username": "koa6",
+        "password": "$2y$10$uTxtWHviqbb5yTcMqTDR.u4TFFEXeoRQcAjzlhfbI8kzxFoNlo5FC",
+        "phone": "",
+        "address": "",
+        "vip_status": "Actif",
+        "join_date": "2025-03-28",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "maru@gmazil.com",
+        "username": "maru",
+        "password": "$2y$10$wp59vx3VpNawKu3wZNy8bOVNXd.sQV9tZLvDb1\/FlJUd9RIoNCYHm",
+        "phone": "0600000000",
+        "address": "38 rue des camarades",
+        "vip_status": "Inactif",
+        "join_date": "2025-03-30",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa8@gmail.com",
+        "username": "koa8",
+        "password": "$2y$10$CdqlJ8a502E5DfKxK41O9.tkBdkp6et\/ya7j3CVTY8hALo89QqJfS",
+        "phone": "",
+        "address": "",
+        "vip_status": "Inactif",
+        "join_date": "2025-03-31",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa10@gmail.com",
+        "username": "koa10",
+        "password": "$2y$10$PQEQWohbsbgT6JCxWrahM.sDtIYs\/KZUOZOZOTDQcZxTvpf881HW.",
+        "phone": "0600000001",
+        "address": "38 rue des camarades, Paris, 75001",
+        "vip_status": "Pending",
+        "join_date": "2025-05-11",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa11@gmail.com",
+        "username": "koa11",
+        "password": "$2y$10$N3V4P6PhT10nUoB1X\/o4T.b1xNzrnEMNU4sg4QO5qAdx1sZnr3Pzy",
+        "phone": "0600000002",
+        "address": "38 rue des camarades, Paris, 75001",
+        "vip_status": "Actif",
+        "join_date": "2025-05-11",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koa12@gmail.com",
+        "username": "koa12",
+        "password": "$2y$10$EPqmtw4WqK\/guOLIgZVTLukd\/aAbI5QRU930JDXUjD.fezKYQPUTK",
+        "phone": "0600000003",
+        "address": "38 rue des camarades, Paris, 75001",
+        "vip_status": "Actif",
+        "join_date": "2025-05-11",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koakoa@gmail.com",
+        "username": "koakoa",
+        "password": "$2y$10$UNZkCTrLLY1Ha3J3w2ZUfOEJWAVYoeuUfQ4nO6jFbohl73T7dse2e",
+        "phone": "0600000099",
+        "address": "38 rue des camarades, Paris, 75001",
+        "vip_status": "Actif",
+        "join_date": "2025-05-12",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    },
+    {
+        "email": "koahans@gmail.com",
+        "username": "koa",
+        "password": "$2y$10$3V.NX.4GbDK\/UWD\/G5ZddOz7TLmvSQ\/TxiuOjGPV3dWN0O6\/KzZR6",
+        "phone": "0123456789",
+        "address": "38 rue des camarades, Paris, 75000",
+        "vip_status": "Inactif",
+        "join_date": "2025-05-13",
+        "profile_picture": "https:\/\/th.bing.com\/th\/id\/OIP.jAJJPOd3jC4EmG8cmmoNugHaHa?rs=1&pid=ImgDetMain",
+        "is_admin": false
+    }
+]
