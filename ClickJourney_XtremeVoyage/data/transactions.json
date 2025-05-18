@@ -1,0 +1,752 @@
+[
+    {
+        "username": "koa",
+        "transaction": "154632ABCD",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "6728eaca7d26ed568d359664406616ec",
+        "date": "2025-03-29 23:50:21",
+        "pays_selectionne": "Suisse",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": {
+            "dauphins": "0",
+            "grottes": "0",
+            "tramway": "0",
+            "lello": "0",
+            "croisiere": "0"
+        },
+        "vol": "Vol 2 - Londres \u00e0 Suisse - 14:00-07:00",
+        "hotel": "Beausite Park Hotel - 4 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive",
+            "Petit D\u00e9jeuner Seul",
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "154632ABCD",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "denied",
+        "control": "9ebeaa8a9d23c20f10881a59ebd53d37",
+        "date": "2025-03-30 00:12:02",
+        "pays_selectionne": "Suisse",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": {
+            "dauphins": "0",
+            "grottes": "0",
+            "tramway": "0",
+            "lello": "0",
+            "croisiere": "0"
+        },
+        "vol": "Vol 2 - Londres \u00e0 Suisse - 14:00-07:00",
+        "hotel": "Jaegerhof Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive",
+            "Petit D\u00e9jeuner Seul",
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "154632ABCD",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "denied",
+        "control": "9ebeaa8a9d23c20f10881a59ebd53d37",
+        "date": "2025-03-30 00:12:12",
+        "pays_selectionne": "Suisse",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": {
+            "dauphins": "0",
+            "grottes": "0",
+            "tramway": "0",
+            "lello": "0",
+            "croisiere": "0"
+        },
+        "vol": "Vol 2 - Londres \u00e0 Suisse - 14:00-07:00",
+        "hotel": "Jaegerhof Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive",
+            "Petit D\u00e9jeuner Seul",
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "154632ABCD",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "denied",
+        "control": "9ebeaa8a9d23c20f10881a59ebd53d37",
+        "date": "2025-03-30 00:12:50",
+        "pays_selectionne": "Suisse",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": {
+            "dauphins": "0",
+            "grottes": "0",
+            "tramway": "0",
+            "lello": "0",
+            "croisiere": "0"
+        },
+        "vol": "Vol 2 - Londres \u00e0 Suisse - 14:00-07:00",
+        "hotel": "Jaegerhof Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive",
+            "Petit D\u00e9jeuner Seul",
+            "Voiture de Location",
+            "Voiture de Location",
+            "Petit D\u00e9jeuner Seul",
+            "All Inclusive"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa2",
+        "transaction": "154632ABCD",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "6728eaca7d26ed568d359664406616ec",
+        "date": "2025-03-30 19:08:01",
+        "pays_selectionne": "Cuba",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": [],
+        "vol": "Vol 2 - Londres \u00e0 Cuba - 14:00-07:00",
+        "hotel": "Gran Muthu Almirante Beach Hotel - 5 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Boitier 5G Illimit\u00e9"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa2",
+        "transaction": "ssqHhdaQy8",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "33e4838a7febfd4535ec7709d6a0c6b4",
+        "date": "2025-03-30 19:13:48",
+        "pays_selectionne": "N\u00e9pal",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": [],
+        "vol": "Vol 1 - Paris \u00e0 N\u00e9pal - 10:00-13:00",
+        "hotel": "Hotel Shambala - 4 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location",
+            "Boitier 5G Illimit\u00e9"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "qeBOIl0v4wKOAWeGo8R86Wg",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "denied",
+        "control": "5dd52de2d9020ecebf2d6445149ac4b4",
+        "date": "2025-03-31 00:10:25",
+        "pays_selectionne": "Espagne",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": [],
+        "vol": "Vol 1 - Paris \u00e0 Espagne - 10:00-13:00",
+        "hotel": "Hotel Gravina 51 - 4 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "CWcf1r1McyF0pmA1EGGj7rdu",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "8f794e594b4b3da8c47ab591699b061a",
+        "date": "2025-03-31 00:10:38",
+        "pays_selectionne": "Espagne",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "3",
+        "activites": [],
+        "vol": "Vol 1 - Paris \u00e0 Espagne - 10:00-13:00",
+        "hotel": "Hotel Gravina 51 - 4 \u00e9toiles",
+        "options_supplementaires": [
+            "Voiture de Location"
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "uDBIYfaAZOgCq",
+        "montant": "18000.99",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "f7a153fea7a88fe199c2a8b4ac750004",
+        "date": "2025-05-10 00:18:30",
+        "pays_selectionne": "N\u00e9pal",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Free Solo sur une paroi de l'Himalaya": {
+                "quantite": 1,
+                "prix": 500
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 N\u00e9pal - 12:30-15:30 - EasyJet",
+        "hotel": "Oasis Kathmandu Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "A56zqpR1SSTZYyL",
+        "montant": "1110.4",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "b67aea7bcaa72c6eaaffab57989b594f",
+        "date": "2025-05-10 12:21:22",
+        "pays_selectionne": "Afrique-du-sud",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Le Big Swing de Graskop Gorge": {
+                "quantite": 1,
+                "prix": 80
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 Afrique-du-sud - 12:30-15:30 - EasyJet",
+        "hotel": "Agulhas Ocean House - 3 \u00e9toiles",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "A56zqpR1SSTZYyL",
+        "montant": "1110.4",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "b67aea7bcaa72c6eaaffab57989b594f",
+        "date": "2025-05-10 12:21:34",
+        "pays_selectionne": "Afrique-du-sud",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Le Big Swing de Graskop Gorge": {
+                "quantite": 1,
+                "prix": 80
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 Afrique-du-sud - 12:30-15:30 - EasyJet",
+        "hotel": "Agulhas Ocean House - 3 \u00e9toiles",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "unknown",
+        "transaction": "vI7Y8W2LJiQDnEfPCXNLm",
+        "montant": "1050.00",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "b3cfff1fa0e5e200f7a38011ebdaeb06",
+        "date": "2025-05-10 22:10:43",
+        "pays_selectionne": "Portugal",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Nager avec des dauphins": {
+                "quantite": 2,
+                "prix": 50
+            },
+            "Visite des grottes": {
+                "quantite": 2,
+                "prix": 30
+            }
+        },
+        "vol": "Vol 1 - Paris \u00e0 Lisbonne - 10:00-12:00",
+        "hotel": "Hotel Lisboa Plaza - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            },
+            {
+                "nom": "Petit D\u00e9jeuner Seul",
+                "prix": 15
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "n2pZCbMyg8yvQaH4rBb",
+        "montant": "1050.00",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "322142d1d9c1d4104909fec901435c93",
+        "date": "2025-05-10 22:11:36",
+        "pays_selectionne": "Portugal",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Nager avec des dauphins": {
+                "quantite": 2,
+                "prix": 50
+            },
+            "Visite des grottes": {
+                "quantite": 2,
+                "prix": 30
+            }
+        },
+        "vol": "Vol 1 - Paris \u00e0 Lisbonne - 10:00-12:00",
+        "hotel": "Hotel Lisboa Plaza - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            },
+            {
+                "nom": "Petit D\u00e9jeuner Seul",
+                "prix": 15
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "ZSZfChKlsD0jZX5J",
+        "montant": "1050.00",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "e2afc3bfb68419310d9500bc6ca3c2f4",
+        "date": "2025-05-10 22:24:24",
+        "pays_selectionne": "Portugal",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": 2,
+        "activites": {
+            "Nager avec des dauphins": {
+                "quantite": 2,
+                "prix": 50
+            },
+            "Visite des grottes": {
+                "quantite": 2,
+                "prix": 30
+            }
+        },
+        "vol": "Vol 1 - Paris \u00e0 Lisbonne - 10:00-12:00",
+        "hotel": "Hotel Lisboa Plaza - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            },
+            {
+                "nom": "Petit D\u00e9jeuner Seul",
+                "prix": 15
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "x0HukVz0UPdHyIhY4jPHGRC4",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "e84347ce2295ec8323a3e80306df397a",
+        "date": "2025-05-11 18:21:35",
+        "pays_selectionne": "Non s\u00e9lectionn\u00e9",
+        "date_depart": "Non s\u00e9lectionn\u00e9e",
+        "nombre_personnes": "Non s\u00e9lectionn\u00e9",
+        "activites": [],
+        "vol": "Non s\u00e9lectionn\u00e9",
+        "hotel": "Non s\u00e9lectionn\u00e9",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "Zr4NDqWbBy",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "0b63ca51c3275e0d34775a06f4818d5f",
+        "date": "2025-05-11 19:10:53",
+        "pays_selectionne": "Italie",
+        "date_depart": "2025-05-19",
+        "date_retour": "2025-05-25",
+        "nombre_jours": 7,
+        "nombre_personnes": 2,
+        "activites": [],
+        "vol": "Non s\u00e9lectionn\u00e9",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (CDG) - 21:45-00:50 - Lufthansa",
+        "hotel": "Non s\u00e9lectionn\u00e9",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "PNUlHYUmYeeX4SV",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "256c1009f55eb696223a28cfdbcd3d63",
+        "date": "2025-05-11 19:12:18",
+        "pays_selectionne": "Italie",
+        "date_depart": "2025-05-19",
+        "date_retour": "2025-05-25",
+        "nombre_jours": 7,
+        "nombre_personnes": 2,
+        "activites": [],
+        "vol": "Non s\u00e9lectionn\u00e9",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (CDG) - 21:45-00:50 - Lufthansa",
+        "hotel": "Non s\u00e9lectionn\u00e9",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "vNzlNwKohqQtNEc",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "denied",
+        "control": "d04bd567cc1a24d5816ab0f32c3526a7",
+        "date": "2025-05-11 19:12:48",
+        "pays_selectionne": "Italie",
+        "date_depart": "2025-05-19",
+        "date_retour": "2025-05-25",
+        "nombre_jours": 7,
+        "nombre_personnes": 2,
+        "activites": [],
+        "vol": "Non s\u00e9lectionn\u00e9",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (CDG) - 21:45-00:50 - Lufthansa",
+        "hotel": "Non s\u00e9lectionn\u00e9",
+        "options_supplementaires": [],
+        "type": "voyage"
+    },
+    {
+        "username": "koa5",
+        "transaction": "ULTxw2jDKgivR",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "dc3f1109032245b13d97c5d9e8566e87",
+        "date": "2025-05-11 20:00:32",
+        "pays_selectionne": "Suisse",
+        "date_depart": "2025-05-14",
+        "date_retour": "2025-05-18",
+        "nombre_jours": 5,
+        "nombre_personnes": 1,
+        "activites": {
+            "Randonn\u00e9e dans les gorges de l'Aar": {
+                "quantite": 1,
+                "prix": 45
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 Suisse - 12:30-15:30 - EasyJet",
+        "vol_retour": "Retour - Suisse \u00e0 Paris (CDG) - 10:00-13:00 - TAP Portugal",
+        "hotel": "Jaegerhof Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa5",
+        "transaction": "StMiKxm3rue9ugpeN",
+        "montant": "50",
+        "vendeur": "TEST",
+        "status": "accepted",
+        "control": "16560ed16495080c7d42c1b2ed0fe7d5",
+        "date": "2025-05-11 20:00:39",
+        "pays_selectionne": "Suisse",
+        "date_depart": "2025-05-14",
+        "date_retour": "2025-05-18",
+        "nombre_jours": 5,
+        "nombre_personnes": 1,
+        "activites": {
+            "Randonn\u00e9e dans les gorges de l'Aar": {
+                "quantite": 1,
+                "prix": 45
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 Suisse - 12:30-15:30 - EasyJet",
+        "vol_retour": "Retour - Suisse \u00e0 Paris (CDG) - 10:00-13:00 - TAP Portugal",
+        "hotel": "Jaegerhof Hotel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "unknown",
+        "transaction": "h3kYO2zZMQLET",
+        "montant": "4559",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "5e7876f99239a5f0601a68ba4e792954",
+        "date": "2025-05-11 22:19:20",
+        "pays_selectionne": "Espagne",
+        "date_depart": "2025-05-12",
+        "date_retour": "2025-05-30",
+        "nombre_jours": 19,
+        "nombre_personnes": 1,
+        "activites": {
+            "Buggy en pleine nature": {
+                "quantite": 1,
+                "prix": 80
+            }
+        },
+        "vol": "Vol 3 - Paris (CDG) \u00e0 Espagne - 18:45-22:15 - Lufthansa",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (CDG) - 21:45-00:50 - Lufthansa",
+        "hotel": "La Posada Del Angel - 3 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa",
+        "transaction": "6Ew1ctiLNe",
+        "montant": "2499.00",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "37c2c02c9d526214809a1f216fd53b44",
+        "date": "2025-05-11 23:18:08",
+        "pays_selectionne": "Japon",
+        "date_depart": "2025-05-14",
+        "date_retour": "2025-05-23",
+        "nombre_jours": 10,
+        "nombre_personnes": 1,
+        "activites": {
+            "Affronter un ours brun en 'battle mode'": {
+                "quantite": 1,
+                "prix": 500
+            }
+        },
+        "vol": "Vol 2 - Paris (ORY) \u00e0 Japon - 12:30-15:30 - EasyJet",
+        "vol_retour": "Retour - Japon \u00e0 Paris (ORY) - 16:15-19:00 - Transavia",
+        "hotel": "Hotel ShinjukuUne - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            },
+            {
+                "nom": "5G illimit\u00e9",
+                "prix": 10
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "sasa",
+        "transaction": "bA18EVBLFtlXtc",
+        "montant": "50",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "352d2062c7866c76a147574a5640b004",
+        "date": "2025-05-17 21:15:37",
+        "type": "vip"
+    },
+    {
+        "username": "unknown",
+        "transaction": "Gt8Y0lUNSL3pB",
+        "montant": "50",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "fd671b0a5221316318698452e2f5580c",
+        "date": "2025-05-17 21:16:24",
+        "type": "vip"
+    },
+    {
+        "username": "koa3",
+        "transaction": "j1grSjWCRM6Z",
+        "montant": "2138.4",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "f7da4881edd50b7474827b00ba8e5243",
+        "date": "2025-05-18 23:07:02",
+        "pays_selectionne": "Espagne",
+        "date_depart": "2025-05-20",
+        "date_retour": "2025-05-23",
+        "nombre_jours": 4,
+        "nombre_personnes": 2,
+        "activites": {
+            "Karting": {
+                "quantite": 1,
+                "prix": 45
+            },
+            "Buggy en pleine nature": {
+                "quantite": 1,
+                "prix": 80
+            }
+        },
+        "vol": "Vol 1 - Paris (CDG) \u00e0 Espagne - 08:00-11:00 - Air France",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (ORY) - 16:15-19:00 - Transavia",
+        "hotel": "Hotel Gravina 51 - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "5G illimit\u00e9",
+                "prix": 10
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa3",
+        "transaction": "VoF5zsKXTe7Ok",
+        "montant": "1999.2",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "c952f139374b3a26ec95d6c97b8a6e18",
+        "date": "2025-05-18 23:29:56",
+        "pays_selectionne": "Portugal",
+        "date_depart": "2025-05-14",
+        "date_retour": "2025-05-17",
+        "nombre_jours": 4,
+        "nombre_personnes": 2,
+        "activites": {
+            "Nager avec des dauphins": {
+                "quantite": 2,
+                "prix": 51
+            },
+            "Visite des grottes en bateau": {
+                "quantite": 2,
+                "prix": 30.5
+            },
+            "Croisi\u00e8re dans la Vall\u00e9e du Douro": {
+                "quantite": 2,
+                "prix": 57.5
+            }
+        },
+        "vol": "Vol 1 - Paris (CDG) \u00e0 Portugal-Porto - 08:00-11:00 - Air France",
+        "vol_retour": "Retour - Portugal-Porto \u00e0 Paris (CDG) - 10:00-13:00 - TAP Portugal",
+        "hotel": "Hotel Avenida Palace - 5 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "All Inclusive",
+                "prix": 17
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa3",
+        "transaction": "FJLCKgaRaJPwMaZd8AYpT",
+        "montant": "1999.2",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "ae913011141fa39eb0e8ab9504f2283d",
+        "date": "2025-05-18 23:31:53",
+        "pays_selectionne": "Portugal",
+        "date_depart": "2025-05-14",
+        "date_retour": "2025-05-17",
+        "nombre_jours": 4,
+        "nombre_personnes": 2,
+        "activites": {
+            "Nager avec des dauphins": {
+                "quantite": 2,
+                "prix": 51
+            },
+            "Visite des grottes en bateau": {
+                "quantite": 2,
+                "prix": 30.5
+            },
+            "Croisi\u00e8re dans la Vall\u00e9e du Douro": {
+                "quantite": 2,
+                "prix": 57.5
+            }
+        },
+        "vol": "Vol 1 - Paris (CDG) \u00e0 Portugal-Porto - 08:00-11:00 - Air France",
+        "vol_retour": "Retour - Portugal-Porto \u00e0 Paris (CDG) - 10:00-13:00 - TAP Portugal",
+        "hotel": "Hotel Avenida Palace - 5 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "All Inclusive",
+                "prix": 17
+            }
+        ],
+        "type": "voyage"
+    },
+    {
+        "username": "koa3",
+        "transaction": "N2jK63ze8pknhlq83rfNegbZ",
+        "montant": "7530.4",
+        "vendeur": "MI-5_F",
+        "status": "accepted",
+        "control": "591eb64dc133fe8dc2fddaeeab0ea889",
+        "date": "2025-05-18 23:39:39",
+        "pays_selectionne": "Espagne",
+        "date_depart": "2025-05-19",
+        "date_retour": "2025-05-29",
+        "nombre_jours": 11,
+        "nombre_personnes": 2,
+        "activites": {
+            "Karting": {
+                "quantite": 105,
+                "prix": 45
+            },
+            "Buggy en pleine nature": {
+                "quantite": 1,
+                "prix": 80
+            }
+        },
+        "vol": "Vol 1 - Paris (CDG) \u00e0 Espagne - 08:00-11:00 - Air France",
+        "vol_retour": "Retour - Espagne \u00e0 Paris (ORY) - 16:15-19:00 - Transavia",
+        "hotel": "Hotel Gravina 51 - 4 \u00e9toiles",
+        "options_supplementaires": [
+            {
+                "nom": "Voiture de Location",
+                "prix": 70
+            }
+        ],
+        "type": "voyage"
+    }
+]
